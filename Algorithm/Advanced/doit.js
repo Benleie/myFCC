@@ -10,7 +10,9 @@ let cl = console.log;
 	cl(RegExp.leftContext)
 }();
 
-
+var o = new Object()
+console.log(JSON.parse(Function))
+console.log(o.prototype)
 
 
 
