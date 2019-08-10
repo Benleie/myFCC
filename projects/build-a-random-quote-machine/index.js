@@ -1,6 +1,8 @@
 let quotes = null,
 	quoteText = document.getElementById('text'),
 	quoteAuthor = document.getElementById('author')
+
+
 function getQuotes(){
 	const url = 'quotes.json',
 	initData = {
@@ -30,7 +32,7 @@ function getRandomQuote(){
 	quoteAuthor.innerText = currentQuote.author
 
 	console.log(currentQuote)
-	// console.log(quotes)
+	console.log(quotes.length)
 }
 
 getQuotes().then(() => {
