@@ -7,10 +7,12 @@
 
 ## Responsive Web Design
 
- Align-self is useful since other common adjustment techniques using the CSS properties float, clear, and vertical-aligndo not work on flex items.
+ Align-self is useful since other common adjustment techniques using the CSS properties float, clear, and vertical-align do not work on flex items.
 
+The `main` HTML5 tag helps search engines and other developers find the main content of your page.
 
-
+### Applied Accessibility  
++ Web Content Accessibility Guidelines
 
 
 

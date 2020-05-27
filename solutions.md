@@ -3,7 +3,7 @@ FCC项目链接
 ## Responsive Web Design
 
 ### [Build a Tribute Page](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
-[solution](https://benleie.github.io/pages/FCC/build-a-tribute-page/)
+[solution](https://benleie.github.io/pages/FCC/build-a-tribute-page)
 + User Story #8: The imgelement should responsively resize, relative to the width of its parent element, without exceeding its original size.
 + `text-align: center;`只能是display为inline的元素居中?
 + 图片自适应，`width:100%;`时，height设置为auto与100%有何区别？
@@ -11,24 +11,36 @@ FCC项目链接
 
 
 ### [Build a Survey Form](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
-[solution](https://benleie.github.io/pages/FCC/build-a-survey-form/)
+[solution](https://benleie.github.io/pages/FCC/build-a-survey-form)
 + input fields
 + 何为HTML5 validation error?  HTML5内置表单验证,调用相关JS api
 
 
 
 ### [Build a Product Landing Page](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
-[solution]()
-
+[solution](https://benleie.github.io/pages/FCC/build-a-product-landing-page)
++ `iframe`插入视频
++ input name属性 用于在表单提交后引用表单数据
 
 
 ### [Build a Technical Documentation Page](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
-[solution]()
-
+[solution](https://benleie.github.io/pages/FCC/build-a-technical-documentation-page)
++ HTML5 元素的语义化  main元素，Sectioning content:article,section,aside,nav
++ Media Queries媒介查询
++ `position: fixed`
 
 
 ### [Build a Personal Portfolio Webpage](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
-[solution]()
+[solution](https://benleie.github.io/pages/FCC/build-a-personal-portfolio-webpage/)
++ User Story #10: The height of the welcome section should be equal to the height of the viewport.
++ font icon    dataurl
+
+
+
+
+
+
+
 
 
 
@@ -52,20 +64,56 @@ FCC项目链接
 
 
 
-### []()
+### [Build a Markdown Previewer](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer)
 [solution]()
 
 
 
-### []()
+### [Build a Drum Machine](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-drum-machine)
 [solution]()
 
 
 
-### []()
+### [Build a JavaScript Calculator](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator)
 [solution]()
 
 
 
-### []()
+### [Build a Pomodoro Clock](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock)
 [solution]()
+
+
+
+
+## Data Visualization
+
+### [Visualize Data with a Bar Chart](https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-bar-chart)
+[solution]()
+
+
+
+
+### [Visualize Data with a Scatterplot Graph](https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-scatterplot-graph)
+[solution]()
+
+
+
+
+### [Visualize Data with a Heat Map](https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-heat-map)
+[solution]()
+
+
+
+
+### [Visualize Data with a Choropleth Map](https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-choropleth-map)
+[solution]()
+
+
+
+
+### [Visualize Data with a Treemap Diagram](https://learn.freecodecamp.org/data-visualization/data-visualization-projects/visualize-data-with-a-treemap-diagram)
+[solution]()
+
+
+
+
