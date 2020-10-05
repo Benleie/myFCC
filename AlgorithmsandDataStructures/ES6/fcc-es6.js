@@ -134,24 +134,213 @@ const LOCAL_FORECAST = {
     yesterday: { low: 61, high: 75 },
     today: { low: 64, high: 77 },
     tomorrow: { low: 68, high: 80 }
+};
+  
+const { today: {
+    low: lowToday,
+    high: highToday
+}} = LOCAL_FORECAST
+  
+  
+// 14
+// use-destructuring-assignment-to-assign-variables-from-arrays
+let a = 8, b = 6;
+//swap the values of a and b
+[a, b] = [b, a]
+
+// 15
+// use-destructuring-assignment-with-the-rest-parameter-to-reassign-array-elements
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+  "use strict";
+  const [,, ...arr] = list;
+  return arr;
+}
+const arr = removeFirstTwo(source);
+
+// 16
+//use-destructuring-assignment-to-pass-an-object-as-a-functions-parameters
+const stats = {
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
   };
   
   // Only change code below this line
-  const { today: {
-    low: lowToday,
-    high: highToday
-  }} = LOCAL_FORECAST
-  
-  
-  // Only change code above this line
-  
-// 14
-// 15
-// 16
+  const half1 = (stats) => (stats.max + stats.min) / 2.0
+  console.log(half1(stats))
+  const half = ({max, min}) => (max + min) / 2.0; 
+  console.log(half(stats))
 // 17
+//create-strings-using-template-literals
+const result = {
+    success: ["max-length", "no-amd", "prefer-arrow-functions"],
+    failure: ["no-var", "var-on-top", "linebreak"],
+    skipped: ["no-extra-semi", "no-dup-keys"]
+  };
+  function makeList(arr) {
+    const failureItems = []
+    arr.forEach(value => {
+      let temp = `<li class="text-warning">${value}</li>`
+      failureItems.push(temp)
+    });
+    return failureItems;
+  }
+  
+  const failuresList = makeList(result.failure);
 // 18
+//write-concise-object-literal-declarations-using-object-property-shorthand
+const createPerson = (name, age, gender) => {
+    "use strict";
+    // Only change code below this line
+    return {
+      name,
+      age,
+      gender
+    };
+    // Only change code above this line
+  };
+  
 // 19
+// write-concise-declarative-functions-with-es6
+// Only change code below this line
+const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+      this.gear = newGear;
+    }
+  };
+  // Only change code above this line
+  bicycle.setGear(3);
+  console.log(bicycle.gear);
+  
 // 20
+// use-class-syntax-to-define-a-constructor-function
+class Vegetable {
+  constructor(VegetableName) {
+    this.name = VegetableName
+  }
+}
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'
+
 // 21
+//use-getters-and-setters-to-control-access-to-an-object
+class Thermostat {
+  constructor(tem){
+    this._temperature = 5/9 * (tem - 32)
+  }
+  get temperature(){
+    return this._temperature
+  }
+  set temperature(newTem){
+    this._temperature = newTem
+  }
+}
+// Only change code above this line
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+
 // 22
+// create-a-module-script
+
+// 23
+//use-export-to-share-a-code-block
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export { uppercaseString, lowercaseString }
+
+
+
+// 24
+// reuse-javascript-code-using-import
+import {uppercaseString, lowercaseString} from './string_functions.js' 
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+// 25
+// use--to-import-everything-from-a-file
+import * as stringFunctions from './string_functions.js'
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+
+// 26
+// create-an-export-fallback-with-export-default
+export default function subtract(x, y) {
+  return x - y;
+}
+
+
+// 27
+// import-a-default-export
+import subtract from "./math_functions.js"  
+subtract(7,4);
+
+
+// 28
+// create-a-javascript-promise
+const makeServerRequest = new Promise((resolve, reject) => {})
+
+
+// 29
+// complete-a-promise-with-resolve-and-reject
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer represents a response from a server
+  let responseFromServer;
+    
+  if(responseFromServer) {
+    resolve("We got the data")
+  } else {  
+    reject("Data not received")
+  }
+});
+
+// 30
+// handle-a-fulfilled-promise-with-then
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+makeServerRequest.then(result => console.log(result))
+
+// 31
+// handle-a-rejected-promise-with-catch
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to false to represent an unsuccessful response from a server
+  let responseFromServer = false;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+makeServerRequest.catch(error => {
+  console.log(error)
+})
+
   
